@@ -47,6 +47,7 @@ export class ReactiveformComponent implements OnInit {
       alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.reactiveForm.value))
   }
 
+<<<<<<< HEAD
   get listFilter():string {
     return this._listFilter;
   }
@@ -55,5 +56,15 @@ export class ReactiveformComponent implements OnInit {
     this._listFilter=value;
     console.log(this.listFilter);
   }
+=======
+  // get listFilter():string {
+  //   return this._listFilter;
+  // }
+  
+  // set listFilter(value :string) {
+  //   this._listFilter=value;
+  //   console.log(this.listFilter);;
+  // }
+>>>>>>> e2759c3db0347e94bb17ab177cbb997d4ac1daef
 
 }
