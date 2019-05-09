@@ -1,0 +1,8 @@
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\bin\Debug\WebGYM.Models.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\bin\Debug\WebGYM.Models.pdb
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\obj\Debug\WebGYM.Models.csprojAssemblyReference.cache
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\obj\Debug\WebGYM.Models.csproj.CoreCompileInputs.cache
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\obj\Debug\WebGYM.Models.csproj.CopyComplete
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\obj\Debug\WebGYM.Models.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Models\obj\Debug\WebGYM.Models.pdb

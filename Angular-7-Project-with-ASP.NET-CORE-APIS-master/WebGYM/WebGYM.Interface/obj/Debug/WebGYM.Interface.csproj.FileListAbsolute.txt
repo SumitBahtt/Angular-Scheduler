@@ -1,0 +1,11 @@
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.Interface.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.Interface.pdb
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.Models.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.ViewModels.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.Models.pdb
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\bin\Debug\WebGYM.ViewModels.pdb
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\obj\Debug\WebGYM.Interface.csprojAssemblyReference.cache
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\obj\Debug\WebGYM.Interface.csproj.CoreCompileInputs.cache
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\obj\Debug\WebGYM.Interface.csproj.CopyComplete
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\obj\Debug\WebGYM.Interface.dll
+D:\Angular\Angular-7-Project-with-ASP.NET-CORE-APIS-master\WebGYM\WebGYM.Interface\obj\Debug\WebGYM.Interface.pdb

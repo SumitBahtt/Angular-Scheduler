@@ -1,0 +1,134 @@
+<div class="container">
+    <h3>Reactive Form </h3>
+    <div class="row">
+
+        <div class="col-md-10">
+            <div class="form">
+                <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" formControlName="firstName" placeholder="firstName(Required)" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                        <div *ngIf="submitted && f.firstName.errors " class="invalid-feedback">
+                            <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" formControlName="lastName" placeholder="lastName(Required)" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                            <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" formControlName="email" placeholder="email(Required)" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors " class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" placeholder="password(Required)" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                        <div *ngIf="submitted && f.password.errors" placeholder="firstName(Required)" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                            <div *ngIf="f.password.errors.minlength">Password must be at least 8 characters</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address</label><br>
+                        <input type="radio" formControlName="address" name="address" value="home" (click)="addAddress()"
+                            [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />Home&nbsp;
+                        <input type="radio" formControlName="address" name="address" value="office" (click)="addAddress()"
+                            [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />Office&nbsp;
+                        <input type="radio" formControlName="address" name="address" value="other" (click)="addAddress()"
+                            [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />Other&nbsp;
+                    </div>
+
+                    <div formArrayName="address" *ngFor="let address of reactiveForm.get('address').controls; let i = index"
+                        class="form-group">
+                        <div [formGroupName]="i">
+                            <div class="header">Home Address Info</div>
+                            <div class="form-group">
+                                <label>House No.</label>
+                                <input type="text" formControlName="house" placeholder="house no(Required)" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.house.errors }" />
+                                <div *ngIf="submitted && f.house.errors " class="invalid-feedback">
+                                    <div *ngIf="f.house.errors.required">House number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact No</label>
+                                <input type="text" formControlName="contact" placeholder="contact(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.contact.errrors }" />
+                                <div *ngIf="submitted && f. contact.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.contact.errors.required">Contact no is required</div>
+                            </div>
+                            <div class="form-group">
+                                <label>State</label>
+                                <input type="text" formControlName="state" placeholder="state(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.state.errors }" />
+                                <div *ngIf="submitted && f.state.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.state.errors.required">State name is required</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input type="text" formControlName="country" placeholder="country(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.country.errors }" />
+                                <div *ngIf="submitted && f.country.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.country.errors.required">Country name is required</div>
+                            </div>
+                        </div><br>
+                    </div>
+
+                    <div formArrayName="address1" *ngFor="let address1 of reactiveForm.get('address1').controls; let i = index"
+                        class="form-group">
+                        <div [formGroupName]="i">
+                            <div class="header1">Office Address Info</div>
+                            <div class="form-group">
+                                <label>office </label>
+                                <input type="text" formControlName="office" placeholder="office no(Required)" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f.office.errors }" />
+                                <div *ngIf="submitted && f.office.errors " class="invalid-feedback">
+                                    <div *ngIf="f.office.errors.required">House number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Contact No</label>
+                                <input type="text" formControlName="contact" placeholder="contact(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.contact.errrors }" />
+                                <div *ngIf="submitted && f. contact.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.contact.errors.required">Contact no is required</div>
+                            </div>
+                            <div class="form-group">
+                                <label>State</label>
+                                <input type="text" formControlName="state" placeholder="state(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.state.errors }" />
+                                <div *ngIf="submitted && f.state.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.state.errors.required">State name is required</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input type="text" formControlName="country" placeholder="country(Required)" class="form-control"
+                                    [ngClass]="{'is-invalid': submitted && f.country.errors }" />
+                                <div *ngIf="submitted && f.country.errors" class="invalid-feedback"></div>
+                                <div *ngIf="f.country.errors.required">Country name is required</div>
+                            </div>
+                        </div><br>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <button type="submit" [disabled]="!reactiveForm.valid" class="btn btn-outline-success">Save</button>&nbsp;
+                        <button type="reset" class="btn btn-outline-danger">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

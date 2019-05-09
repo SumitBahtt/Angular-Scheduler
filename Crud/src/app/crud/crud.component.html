@@ -1,0 +1,32 @@
+<div>
+  <button type="button" class="btn btm-Info" (click)="onSelect('Student')">Add Student</button>
+</div>
+
+<div class="container">
+<form>
+
+  <table>
+    <tr ngclass="btn-primary">
+      <th class="tb12">Id<input type="text"></th>
+      <th class="tbl2">Name<input type="text"></th>
+      <th class="tbl2">Email<input type="text"> </th>
+      <th class="tbl2">Age<input type="text"></th>
+      <th class="tbl2">Course<input type="text"></th>
+    </tr>
+    <tr *ngFor="let student of Get">
+      <td class="tbl2">{{student.Name}}</td>
+      <td class="tbl2">{{student.Email}}</td>
+      <td class="tbl2">{{student.Age}}</td>
+      <td class="tbl2">{{student.Course}}</td>
+      <td class="tbl2">
+        <button type="button" class="btn btn-info" matTooltip="Click Edit Button" (click)="loadStudentToEdit(student.Id)">Edit</button>
+      </td>
+      <td class="tbl2">
+        <button type="button" class="btn btn-danger" matTooltip="Click Delete Button" (click)="deleteStuden(student.Id)">Delete</button>
+      </td>
+    </tr>
+    <button type="button">Submit</button>
+    <button type ="reser">Reset</button>
+  </table>
+  </form>
+</div>

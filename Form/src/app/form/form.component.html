@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-primary btn-lg" (click)="openModal(template)">Create</button>
+
+<ng-template #template>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input required ngModel name="firstName" id="firstName" #firstName (change)="log('firstName')" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">Name Required</div>
+      <label for="lastName">Last Name</label>
+      <input required ngModel name="lastName" id="LastName" #lastName (change)="log('lastName')" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid">Name Required</div>
+      <label for="EmailId">EmailId</label>
+      <input required ngModel name="email" id="EmailId" #email (change)="log('email')" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Name Required</div>
+      <label for="Address">Address</label>
+      <input required ngModel name="address" id="Address" #address (change)="log('address')" type="text" class="form-control">
+      <div class="alert alert-danger" *ngIf="address.touched && !address.valid">Name Required</div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-danger" type="reset">Reset</button>
+  </form>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()"></button>
+
+ </ng-template>
+ 
+ 
+   
