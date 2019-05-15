@@ -4,7 +4,7 @@
             [workHours]="workHours" [selectedDate]="selectedDate" [group]="group" [eventSettings]="eventSettings" (eventRendered)="onEventRendered($event)"
             (actionBegin)="onActionBegin($event)" (renderCell)="onRenderCell($event)" (popupOpen)="onPopupOpen($event)">
             <e-resources>
-                <e-resource field='RoomId' title='Room Type' [dataSource]='resourceDataSource' [allowMultiple]='allowMultiple' name='MeetingRoom'
+                <e-resource field='RoomId' [dataSource]='resourceDataSource' [allowMultiple]='allowMultiple' name='MeetingRoom'
                     textField='text' idField='id' colorField='color'>
                 </e-resource>
             </e-resources>
@@ -12,13 +12,6 @@
                 <e-view option="TimelineDay"></e-view>
                 <e-view option="TimelineWeek"></e-view>
             </e-views>
-            <ng-template #resourceHeaderTemplate let-data>
-                <div class='template-wrap'>
-                    <div class="name">{{data.resourceData.text}}</div>
-                     <div class="type">{{data.resourceData.type}}</div>
-                    <div class="capacity">{{data.resourceData.capacity}}</div>
-                </div>
-            </ng-template>
         </ejs-schedule>
     </div>
 </div>
